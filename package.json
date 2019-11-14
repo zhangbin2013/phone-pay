@@ -1,7 +1,7 @@
 {
   "name": "phone-pay-v",
   "description": "A Vue.js project",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "author": "big_bin <zhangbin2013@aliyun.com>",
   "license": "MIT",
   "private": false,

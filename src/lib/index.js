@@ -5,4 +5,7 @@ const PayPop = {
     Vue.component(vuePayPops.name, vuePayPops)
   }
 }
+export {
+  vuePayPops
+}
 export default PayPop
