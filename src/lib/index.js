@@ -1,11 +1,27 @@
-import vuePayPops from './phone-pay.vue' // 导入组件
+import phonePay from './phone-pay.vue'; // 导入组件
 
-const PayPop = {
-  install (Vue, options) {
-    Vue.component(vuePayPops.name, vuePayPops)
-  }
+const components = [
+  phonePay
+];
+
+const install = function(Vue, options) {
+  components.forEach(component => {
+    Vue.component(component.name, component);
+  })
+
+};
+
+/* istanbul ignore if */
+if(typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
 }
+
 export {
-  vuePayPops
-}
-export default PayPop
+  phonePay
+};
+
+export default {
+  version: '1.0.6',
+  install,
+  phonePay
+};
